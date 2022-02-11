@@ -10,11 +10,48 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #252525;
+    flex-direction: column;
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%2357565a' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
-
+.button-container {
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.7);
+}
 
 button {
-    font-family: barlow,sans-serif;
+  cursor: pointer;
+  outline: none;
+  width: 120px;
+  height: 75px;
+  font-family: Barlow, sans-serif;
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 2px 5px black;
+  background: linear-gradient(to top, #696969, #575757);
+  border: 2px solid black;
+  border-radius: 7px;
+  box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.4), 0 12px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #696969, #575757);
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.info{
+    font-family: Barlow, sans-serif;
+    color: black;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 15px;
+    border: 1px solid black;
+    padding: 5px;
 }
